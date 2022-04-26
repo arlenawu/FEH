@@ -6,19 +6,18 @@ Fire Emblem Heroes is a mobile strategy game that released in February 2017.
 
 -------------------------------------------
 ## To Do
-- Load dataframes into SQL database
-- Run queries for fun, yay
+- ~~Load dataframes into SQL database~~ (completed)
+- Run queries for fun, yay!
 
 -------------------------------------------
 ### Successfully scraped tables
 
-- [Raw Level 40 Stats Table](Images/lvl40_stats_df_RAW.PNG)
+- [Raw Level 40 Stats DataFrame](Images/lvl40_stats_df_RAW.PNG)
 
-  - [Split Hero column into Name and Epithet, and Weapon_Type column into Color and Generic Weapon Type](Images/lvl40_stats_df.PNG)
+  - [Adjusted Level 40 Stats DataFrame](Images/lvl40_stats_df.PNG) (Split Hero column into Name and Epithet, and Weapon_Type column into Color and Generic Weapon Type)
   
-- [Hero Skills Table](Images/hero_skills_df.PNG)
+- [Hero Skills DataFrame](Images/hero_skills_df.PNG)
 
-- [Superassets and Superflaws Table](Images/super_assetflaws_df.PNG)
+- [Superassets and Superflaws DataFrame](Images/super_assetflaws_df.PNG)
 
-- [Hero Availabilty Table](Images/hero_availability_df.PNG)
-  - Converted table to dataframe with hero names as first column
+- [Hero Availabilty DataFrame](Images/hero_availability_df.PNG) (Converted website table to dataframe with hero names as first column)
