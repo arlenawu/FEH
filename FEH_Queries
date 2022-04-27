@@ -1,0 +1,6 @@
+SELECT * FROM lvl40_stats;
+SELECT * FROM hero_skills;
+SELECT * FROM super_assetflaws;
+SELECT * FROM hero_availability;
+
+select * from information_schema.columns where table_name = 'lvl40_stats'
