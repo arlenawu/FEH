@@ -1,0 +1,71 @@
+DROP TABLE IF EXISTS lvl40_stats;
+CREATE TABLE lvl40_stats (
+    Hero VARCHAR(40) NOT NULL,
+    Entry VARCHAR(40) NOT NULL,
+	Move_Type VARCHAR(40) NOT NULL,
+	Weapon_Type VARCHAR(40) NOT NULL,
+	HP INT NOT NULL,
+	Atk INT NOT NULL,
+	Spd INT NOT NULL,
+	Def INT NOT NULL,
+	Res INT NOT NULL,
+	Total INT NOT NULL,
+	Hero_Name VARCHAR(40) NOT NULL,
+	Epithet VARCHAR(40) NOT NULL,
+	Color VARCHAR(40) NOT NULL,
+	Weapon_Type_Generic VARCHAR(40) NOT NULL,
+    PRIMARY KEY (Hero)
+);
+
+DROP TABLE IF EXISTS hero_skills;
+CREATE TABLE hero_skills (
+    Hero VARCHAR(40) NOT NULL,
+    Entry VARCHAR(40) NOT NULL,
+	Move_Type VARCHAR(40) NOT NULL,
+	Weapon_Type VARCHAR(40) NOT NULL,
+	Weapon_Skill VARCHAR(40) NOT NULL,
+	Assist VARCHAR(40) NOT NULL,
+	Special VARCHAR(40) NOT NULL,
+	Passive_A VARCHAR(40) NOT NULL,
+	Passive_B VARCHAR(40) NOT NULL,
+	Passive_C VARCHAR(40) NOT NULL,
+    PRIMARY KEY (Hero)
+);
+
+DROP TABLE IF EXISTS super_assetflaws;
+CREATE TABLE super_assetflaws (
+    Hero VARCHAR(40) NOT NULL,
+    Entry VARCHAR(40) NOT NULL,
+	Move_Type VARCHAR(40) NOT NULL,
+	Weapon_Type VARCHAR(40) NOT NULL,
+	HP_AF VARCHAR(40) NOT NULL,
+	Atk_AF VARCHAR(40) NOT NULL,
+	Spd_AF VARCHAR(40) NOT NULL,
+	Def_AF VARCHAR(40) NOT NULL,
+	Res_AF VARCHAR(40) NOT NULL,
+    PRIMARY KEY (Hero)
+);
+
+DROP TABLE IF EXISTS hero_availability;
+CREATE TABLE hero_availability (
+    Hero VARCHAR(40) NOT NULL,
+	Five_Star_Regular_Pool BOOLEAN NOT NULL,
+	Four_Star_SR_Regular_Pool BOOLEAN NOT NULL,
+	Four–Five_Star_Regular_Pool BOOLEAN NOT NULL,
+	Three–Four_Star_Regular_Pool BOOLEAN NOT NULL,
+	Three–Four_Star_GHB BOOLEAN NOT NULL,
+	Four–Five_Star_TT BOOLEAN NOT NULL,
+	Five_Star_Special BOOLEAN NOT NULL,
+	Four_Star_SR_Special BOOLEAN NOT NULL,
+	Four–Five_Star_Special BOOLEAN NOT NULL,
+	Five_Star_Legendary BOOLEAN NOT NULL,
+	Five_Star_Mythic BOOLEAN NOT NULL,
+	Four_Star_Story BOOLEAN NOT NULL,
+	N_A BOOLEAN NOT NULL,
+    PRIMARY KEY (Hero)
+);
+
+SELECT * FROM lvl40_stats;
+SELECT * FROM hero_skills;
+SELECT * FROM super_assetflaws;
+SELECT * FROM hero_availability;
