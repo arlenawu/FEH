@@ -7,6 +7,7 @@ Fire Emblem Heroes is a mobile strategy game that released in February 2017.
 -------------------------------------------
 ## To Do
 - Account for Harmonic & Duo Units in webscraper
+	- Scrape the harmonic & duo unit tables & merge with lvl40stats
 - Run queries for fun, yay!
 
 -------------------------------------------
